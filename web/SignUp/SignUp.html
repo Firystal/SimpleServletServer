@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8"/>
+        <title>用户注册</title>
+    </head>
+    <body>
+        <form action="SignUp" method="post">
+            <label for="username">请输入用户名</label>
+            <input type="text" name="username"/> <br>
+
+            <label for="password">请输入密码</label>&nbsp;&nbsp;&nbsp;
+            <input type="password" name="password"/> <br>
+
+            <label for="confirmPassword">请确认密码</label>&nbsp;&nbsp;&nbsp;
+            <input type="password" name="confirmPassword"/> <br>
+
+            <input type="submit" value="注册"/>&nbsp;&nbsp;<a href="#" onclick="window.history.back(); return false">返回</a>
+        </form>
+        <br><hr>
+
+        <strong>用户名命名规则</strong>
+        <ul>
+            <li>用户名长度不得超过30（一个汉字占个长度）</li>
+            <li>用户名不得含有'\'符号</li>
+        </ul>
+        <br>
+
+        <strong>密码填写要求</strong>
+        <ul>
+            <li>密码长度在7~16位之间</li>
+            <li>密码只能包含数字、字母以及除'\'以外的特殊字符</li>
+        </ul>
+    </body>
+</html>
